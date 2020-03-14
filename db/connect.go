@@ -6,7 +6,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-func conectar() *sql.DB {
+func Conectar() *sql.DB {
 	fmt.Println("Go com mysql")
 	db, err := sql.Open("mysql", "root:foxtro2008@tcp(172.17.0.1:3306)/golang")
 
