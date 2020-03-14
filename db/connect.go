@@ -11,7 +11,7 @@ func conectar() *sql.DB {
 	db, err := sql.Open("mysql", "root:foxtro2008@tcp(172.17.0.1:3306)/golang")
 
 	if err != nil {
-		fmt.Println(err.Error())
+		panic(err.Error())
 	}
 
 	fmt.Println("Banco conectado com sucesso!")
